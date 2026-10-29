@@ -1,0 +1,59 @@
+{
+ "slug": "spotlight",
+ "nazev": "Spotlight Weddings",
+ "url": "https://webhunter-navrhy.github.io/spotlight/",
+ "base": "/spotlight/",
+ "lang": "cs",
+ "popis": "Svatební video a fotografie s důrazem na emoce a příběhy. Spotlight Weddings natáčí a fotí svatby, nabízí fotobus a dlouhý film.",
+ "navrh": true,
+ "domena": "",
+ "og_image": "LN_0985.jpg",
+ "logo": "logo.png",
+ "theme_color": "#0a0a0a",
+ "typ": "LocalBusiness",
+ "ico": "",
+ "kontakt": {
+  "email": "info@spotlightweddings.cz",
+  "telefon": "+420 724 193 231",
+  "adresa": {
+   "ulice": "",
+   "psc": "",
+   "mesto": "",
+   "zeme": "CZ"
+  }
+ },
+ "oteviraci_doba": [],
+ "sameas": [
+  "https://www.instagram.com/spotlightweddings_cz/",
+  "https://www.facebook.com/profile.php?id=61555804688830",
+  "https://www.youtube.com/channel/UCJRVpimAv_mFHZAgJ6kmpmw"
+ ],
+ "cenove_rozpeti": "",
+ "formular": {
+  "endpoint": "",
+  "demo": true,
+  "predmet": "Poptávka ze svatebního webu"
+ },
+ "nav": [
+  {
+   "text": "Videa",
+   "href": "#video"
+  },
+  {
+   "text": "Foto",
+   "href": "#foto"
+  },
+  {
+   "text": "Služby",
+   "href": "#sluzby"
+  },
+  {
+   "text": "O nás",
+   "href": "#o-nas"
+  },
+  {
+   "text": "Kontakt",
+   "href": "#kontakt"
+  }
+ ]
+}

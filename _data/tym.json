@@ -1,0 +1,17 @@
+[
+ {
+  "jmeno": "Martin",
+  "role": "Kameraman a fotograf",
+  "f": "martin.jpg"
+ },
+ {
+  "jmeno": "Lucie",
+  "role": "Fotografka",
+  "f": "lucie.jpg"
+ },
+ {
+  "jmeno": "Vojta",
+  "role": "Asistent, technické zázemí a fotokoutek",
+  "f": ""
+ }
+]

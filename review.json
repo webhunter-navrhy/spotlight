@@ -1,0 +1,18 @@
+{
+  "znamka": 8,
+  "slabiny": [
+    "Služby na PC (buňka 6): seznam doplňkových služeb je ve třech sloupcích, takže „Videoprodukce Spotlight Films“ visí sama na druhém řádku pod zlatou linkou. Oprava: seznam dát do mřížky 2×2 (nebo do 4 sloupců od 1280 px), aby všechny čtyři položky měly stejnou váhu a řádek nezůstal napůl prázdný.",
+    "Kontakt na mobilu (buňka 7, 390 px): e-mail info@spotlightweddings.cz a telefon mají jako dotykový cíl jen asi 20 px výšky (QA: 163×20 a 116×20) a Instagram, Facebook a YouTube stojí těsně vedle sebe. Oprava: odkazům dát display:inline-block, padding 12px 0 a min-height 44px, sociální sítě oddělit mezerou aspoň 16 px.",
+    "Hero na PC (buňka 1): hlavní tlačítko „Chci vzpomínky ze svatby“ má jen tenký světlý obrys a na tmavé fotce zaniká víc než malé tlačítko Kontakt v hlavičce. Oprava: hero CTA udělat plné zlaté (#c39c63, tmavý text #0a0a0a, výška 52 px), stejně jako zlaté tlačítko Kontakt v mobilní hlavičce, aby hlavní akce byla jedna a jasná."
+  ],
+  "zavazne": [],
+  "silne": [
+    "Výtky z minulého kola jsou opravené. Služby na mobilu jsou v jednom sloupci, nadpisy „Svatební video a fotografie“ a „Fotobus a fotokoutek“ i celé popisky jsou vidět na tmavém přechodu.",
+    "Popisky Emoce / Autenticita / Příběhy a seznam služeb jsou teď větší a světlejší a na PC i mobilu se dobře čtou.",
+    "Mobilní hlavička má zlaté tlačítko Kontakt a hamburger jako velké dotykové cíle, logo je větší.",
+    "Jasný filmový koncept z oboru: štítky Program večera, Kontaktní arch, Titulky a Obsazení vedou celou stránkou a tmavá paleta se zlatou vychází přímo z brandu klienta (#0a0a0a, #c39c63).",
+    "Na webu jsou skutečné fotky a videa klienta (páry s roky, tým Martin a Lucie), Bodoni Moda s háčky v pořádku a QA nenašla žádné přetečení na 6 šířkách."
+  ],
+  "verdikt": "Všechny výtky z minulého kola včetně závažné vady na mobilu jsou opravené a nová závažná vada není. Web je filmový, v brandu klienta a dá se odeslat. Zbývající drobnosti (mřížka služeb, dotykové cíle v kontaktu, výraznější CTA v hero) jsou jen doladění.",
+  "_hash": "1ed51f4f9ad8d4ebcefb281748d3a5c9d9a6d8d4"
+}

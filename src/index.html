@@ -1,0 +1,105 @@
+{% extends "_base.html" %}
+{% set titulek = 'Spotlight Weddings – svatební video a fotografie' %}
+{% set cesta = '' %}
+{% block obsah %}
+<section class="hero" id="uvod">
+  {{ img('LN_0985.jpg', 'Novomanželé při západu slunce v krajině', sizes='100vw', cls='hero-foto') }}
+  <div class="kuzel" aria-hidden="true"></div>
+  <div class="hero-text wrap">
+    <p class="nadpis-maly">Emoce · Autenticita · Příběhy</p>
+    <h1>Uchováme vaše vzácné okamžiky navždy</h1>
+    <a class="tlacitko" href="#kontakt">Chci vzpomínky ze svatby</a>
+  </div>
+</section>
+
+<section class="sekce uvod">
+  <div class="wrap">
+    <p class="velky">Jsme tým tvůrců s téměř desetiletou praxí ve světě svatební videografie a fotografie. Zachytíme nejen estetiku vašeho velkého dne, ale hlavně emoce, příběh a neopakovatelné momenty, které ho definují.</p>
+    <ul class="hodnoty" role="list">
+      <li><h3>Emoce</h3><p>Přirozené emoce, žádná křečovitost.</p></li>
+      <li><h3>Autenticita</h3><p>Umělecká reportáž a spontánní momenty.</p></li>
+      <li><h3>Příběhy</h3><p>Váš den jako film, který se vám bude chtít pouštět znovu.</p></li>
+    </ul>
+  </div>
+</section>
+
+<section class="sekce tmava" id="video">
+  <div class="wrap">
+    <p class="nadpis-maly">Program večera</p>
+    <h2>Svatební videa</h2>
+    {% set v0 = data.videa[0] %}
+    <button class="video hlavni" data-yt="{{ v0.id }}" aria-label="Přehrát svatební video {{ v0.jmena }}">
+      {{ img(v0.img, '', sizes='(min-width: 72rem) 72rem, 100vw') }}
+      <span class="hraj" aria-hidden="true"></span>
+      <span class="titulek"><b>{{ v0.jmena }}</b><i>{{ v0.rok }}</i></span>
+    </button>
+    <ol class="videa" role="list">
+      {% for v in data.videa[1:7] %}
+      <li><button class="video" data-yt="{{ v.id }}" aria-label="Přehrát svatební video {{ v.jmena }}">
+        {{ img(v.img, '', sizes='(min-width: 60rem) 30vw, 50vw') }}
+        <span class="hraj" aria-hidden="true"></span>
+        <span class="titulek"><b>{{ v.jmena }}</b><i>{{ v.rok }}</i></span>
+      </button></li>
+      {% endfor %}
+    </ol>
+    <details class="dalsi"><summary>Další filmy</summary>
+    <ol class="videa" role="list">
+      {% for v in data.videa[7:] %}
+      <li><button class="video" data-yt="{{ v.id }}" aria-label="Přehrát svatební video {{ v.jmena }}">
+        {{ img(v.img, '', sizes='(min-width: 60rem) 30vw, 50vw') }}
+        <span class="hraj" aria-hidden="true"></span>
+        <span class="titulek"><b>{{ v.jmena }}</b><i>{{ v.rok }}</i></span>
+      </button></li>
+      {% endfor %}
+    </ol></details>
+  </div>
+</section>
+
+<section class="sekce" id="foto">
+  <div class="wrap">
+    <p class="nadpis-maly">Kontaktní arch</p>
+    <h2>Svatební fotografie</h2>
+    <ul class="arch" role="list">
+      {% for f in data.foto %}<li>{{ img(f.f, f.alt, sizes='(min-width: 60rem) 24vw, (min-width: 40rem) 33vw, 50vw') }}</li>{% endfor %}
+    </ul>
+  </div>
+</section>
+
+<section class="sekce tmava" id="sluzby">
+  <div class="wrap">
+    <p class="nadpis-maly">Titulky</p>
+    <h2>Služby</h2>
+    <div class="sluzby-velke">
+      <div class="sluzba-velka">{{ img('LN_6313.jpg', 'Svatební video a fotografie', sizes='(min-width: 44rem) 36rem, 100vw') }}<div><h3>{{ data.sluzby[0].nazev }} a fotografie</h3><p>Filmový klip z celého dne a umělecká reportáž bez křečovitého pózování. Emoce, přísahy, spontánní chvíle.</p></div></div>
+      <div class="sluzba-velka">{{ img('LN_9226.jpg', 'Fotobus a fotokoutek na svatbě', sizes='(min-width: 44rem) 36rem, 100vw') }}<div><h3>Fotobus a fotokoutek</h3><p>Renovovaný sanitní vůz ze 60. let jako stylový fotokoutek pro Vaše hosty.</p></div></div>
+    </div>
+    <ul class="titulky" role="list">
+      {% for s in data.sluzby[2:] %}<li><h3>{{ s.nazev }}</h3><p>{{ s.popis }}</p></li>{% endfor %}
+    </ul>
+  </div>
+</section>
+
+<section class="sekce" id="o-nas">
+  <div class="wrap">
+    <p class="nadpis-maly">Obsazení</p>
+    <h2>Kdo vás ponese svatbou</h2>
+    <p class="velky">Před svatbou se rádi potkáme, abyste nás znali a před kamerou se cítili uvolněně.</p>
+    <ul class="tym" role="list">
+      {% for t in data.tym if t.f %}<li>{{ img(t.f, t.jmeno ~ ' – ' ~ t.role, sizes='(min-width: 40rem) 28vw, 50vw') }}<h3>{{ t.jmeno }}</h3><p>{{ t.role }}</p></li>{% endfor %}
+    </ul>
+    <p class="tym-vojta">Na svatbě pomáhá i Vojta: technické zázemí a fotokoutek.</p>
+  </div>
+</section>
+
+<section class="sekce tmava" id="kontakt">
+  <div class="wrap kontakt">
+    <div>
+      <p class="nadpis-maly">Pojďme natáčet</p>
+      <h2>Napište nám o své svatbě</h2>
+      <p>Martin Vaněk<br><a href="mailto:{{ site.kontakt.email }}">{{ site.kontakt.email }}</a><br><a href="tel:{{ site.kontakt.telefon|replace(' ', '') }}">{{ site.kontakt.telefon }}</a></p>
+      <p class="soc">{% for u in site.sameas %}<a href="{{ u }}" rel="noopener">{{ ['Instagram','Facebook','YouTube'][loop.index0] }}</a>{% endfor %}</p>
+    </div>
+    {% include "_formular.html" %}
+  </div>
+</section>
+{% endblock %}

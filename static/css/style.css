@@ -1,0 +1,83 @@
+:root{--cerna:#0a0a0a;--zlata:#c39c63;--zl2:#deb87c;--krem:#F8F7F3;--sed:#9a968c;--display:"Bodoni Moda",Georgia,serif;--text:"Jost",system-ui,sans-serif}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;background:var(--cerna);color:var(--krem);font:400 1.0625rem/1.65 var(--text)}
+img{display:block;max-width:100%;height:auto}a{color:var(--zl2)}
+.wrap{width:min(72rem,100% - 2.5rem);margin-inline:auto}
+.skip{position:absolute;left:-99rem}.skip:focus{left:1rem;top:1rem;background:#fff;color:#000;padding:.5rem;z-index:99}
+.hlavicka{position:fixed;inset:0 0 auto;z-index:20;background:linear-gradient(#0a0a0aee,#0a0a0a00);transition:background .3s}.hlavicka.plna{background:#0a0a0af2;backdrop-filter:blur(8px);border-bottom:1px solid #2e2a22}
+.hlavicka .wrap{display:flex;justify-content:space-between;align-items:center;padding:.9rem 0}
+.menu-btn{display:none;background:none;border:1px solid var(--zlata);color:var(--krem);width:44px;height:44px;font-size:1.3rem;cursor:pointer}
+.hlavicka nav{display:flex;gap:1.4rem;flex-wrap:wrap;justify-content:flex-end}
+.hlavicka nav a{color:var(--krem);text-decoration:none;font-size:.78rem;letter-spacing:.18em;text-transform:uppercase;padding:.5rem .1rem}
+.hlavicka nav a:hover{color:var(--zl2)}
+.hero{position:relative;min-height:100svh;display:flex;align-items:flex-end;overflow:hidden}
+.hero-foto{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;filter:brightness(.62)}
+.kuzel{position:absolute;inset:0;pointer-events:none;background:radial-gradient(circle 22rem at var(--x,70%) var(--y,35%),rgba(222,184,124,.28),transparent 70%);mix-blend-mode:screen}
+.hero::after{content:"";position:absolute;inset:auto 0 0;height:60%;background:linear-gradient(transparent,var(--cerna));pointer-events:none}
+.hero-text{position:relative;z-index:2;padding:0 0 4.5rem}
+.hero h1{font:400 clamp(2.4rem,7vw,5.6rem)/1.04 var(--display);margin:.4rem 0 1.8rem;max-width:15ch}
+.nadpis-maly{font-size:.78rem;letter-spacing:.28em;text-transform:uppercase;color:var(--zlata);margin:0}
+.tlacitko{display:inline-block;border:1px solid var(--zlata);color:var(--krem);text-decoration:none;padding:.9rem 1.8rem;letter-spacing:.14em;text-transform:uppercase;font-size:.85rem;transition:background .25s,color .25s}
+.tlacitko:hover{background:var(--zlata);color:var(--cerna)}
+.sekce{padding:clamp(3.5rem,7vw,6rem) 0}.tmava{background:#111010}
+h2{font:400 clamp(2rem,4.6vw,3.6rem)/1.1 var(--display);margin:.4rem 0 2.2rem}
+h3{font:400 1.5rem/1.2 var(--display);margin:0 0 .4rem}
+.velky{font:400 italic clamp(1.3rem,2.6vw,2rem)/1.4 var(--display);max-width:48ch;margin:0 0 3rem}
+.hodnoty{list-style:none;padding:0;margin:0;display:grid;gap:2rem;grid-template-columns:repeat(auto-fit,minmax(15rem,1fr))}
+.hodnoty li{border-top:1px solid var(--zlata);padding-top:1rem}.hodnoty span{color:var(--zlata);font:italic 1rem var(--display)}
+.hodnoty p,.tym p{color:#f8f7f3cc;margin:0}
+.videa{list-style:none;padding:0;margin:0;display:grid;gap:1.2rem;grid-template-columns:repeat(auto-fill,minmax(19rem,1fr))}
+.video{all:unset;cursor:pointer;display:block;position:relative;width:100%;aspect-ratio:16/9;overflow:hidden;outline-offset:3px}
+.video:focus-visible{outline:2px solid var(--zl2)}
+.video img{width:100%;height:100%;object-fit:cover;transition:transform .6s,filter .4s;filter:brightness(.8)}
+.video:hover img{transform:scale(1.05);filter:brightness(1)}
+.hraj{position:absolute;left:50%;top:50%;width:3.6rem;height:3.6rem;margin:-1.8rem;border:1px solid var(--zl2);border-radius:50%;background:#0a0a0a88}
+.hraj::after{content:"";position:absolute;left:1.4rem;top:1.05rem;border:.75rem solid transparent;border-left:1.1rem solid var(--zl2);border-right:0}
+.titulek{position:absolute;inset:auto 0 0;padding:2rem 1rem .8rem;background:linear-gradient(transparent,#0a0a0acc);display:flex;justify-content:space-between;gap:1rem;font-size:.95rem}
+.titulek i{color:var(--zl2)}
+.arch{list-style:none;padding:0;margin:0;display:grid;gap:.6rem;grid-template-columns:repeat(auto-fill,minmax(14rem,1fr))}
+.arch li{aspect-ratio:3/2;overflow:hidden;background:#000;border:.35rem solid #000;box-shadow:0 0 0 1px #2a2620}
+.arch img{width:100%;height:100%;object-fit:cover;transition:transform .6s}.arch li:hover img{transform:scale(1.06)}
+.titulky{list-style:none;padding:0;margin:0}
+.titulky{display:grid;gap:0 3rem;grid-template-columns:repeat(auto-fit,minmax(20rem,1fr))}
+.titulky li{padding:1.6rem 0;border-top:1px solid var(--zlata)}
+.titulky p{font-size:1.0625rem;color:#f8f7f3cc}
+.video.hlavni{margin-bottom:1.2rem;aspect-ratio:21/9}
+.dalsi{margin-top:1.2rem}.dalsi summary{cursor:pointer;color:var(--zl2);letter-spacing:.16em;text-transform:uppercase;font-size:.85rem;padding:.8rem 0}.dalsi .videa{margin-top:1rem}
+.tym li.text{align-self:end}.tym{list-style:none;padding:0;margin:0;display:grid;gap:2rem;grid-template-columns:repeat(auto-fit,minmax(14rem,1fr))}
+.tym img,.bez-foto{aspect-ratio:1;object-fit:cover;width:100%;margin-bottom:1rem}
+.bez-foto{display:grid;place-items:center;background:#1a1814;font:italic 5rem var(--display);color:var(--zlata)}
+.ref{color:var(--sed)}
+.kontakt{display:grid;gap:3rem;grid-template-columns:repeat(auto-fit,minmax(18rem,1fr))}
+.soc a{margin-right:1.2rem}
+.formular{display:grid;gap:1rem}
+.formular label{display:grid;gap:.3rem;font-size:.8rem;letter-spacing:.14em;text-transform:uppercase;color:var(--zlata)}
+.formular input,.formular textarea{font:inherit;font-size:1rem;background:#0a0a0a;color:var(--krem);border:1px solid #3a342a;padding:.8rem;text-transform:none;letter-spacing:0}
+.formular input:focus,.formular textarea:focus{outline:2px solid var(--zl2)}
+.formular button{justify-self:start;background:var(--zlata);color:var(--cerna);border:0;padding:.95rem 2rem;font:600 .85rem var(--text);letter-spacing:.14em;text-transform:uppercase;cursor:pointer}
+.formular-stav{margin:0;color:var(--zl2)}.past{position:absolute;left:-99rem}
+.paticka{padding:2.5rem 0;border-top:1px solid #2e2a22;color:var(--sed);font-size:.9rem}.paticka p{margin:.2rem 0}
+.prehravac{position:fixed;inset:0;z-index:50;background:#000e;display:grid;place-items:center;padding:1rem}
+.prehravac div{width:min(70rem,100%);aspect-ratio:16/9;position:relative}.prehravac iframe{width:100%;height:100%;border:0}
+.prehravac button{position:absolute;right:0;top:-2.6rem;background:none;border:0;color:var(--krem);font-size:2rem;cursor:pointer}
+@media(prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto}}
+
+.hlavicka .wrap>a.logo img{width:auto;height:44px}
+.hlavicka nav a.kont{border:1px solid var(--zlata);padding:.5rem 1rem}
+.sluzby-velke{display:grid;gap:1.5rem;grid-template-columns:1fr 1fr;margin-bottom:2rem}
+.sluzba-velka{position:relative;overflow:hidden}.sluzba-velka img{width:100%;aspect-ratio:4/3;object-fit:cover;filter:brightness(.7)}
+.sluzba-velka div{position:absolute;inset:auto 0 0;padding:1.4rem;background:linear-gradient(transparent,#0a0a0aee)}
+.sluzba-velka p{margin:0;color:#f8f7f3dd}
+.tym-vojta{color:#f8f7f3cc;max-width:48ch}
+
+.kont-m{display:none;border:1px solid var(--zlata);background:var(--zlata);color:var(--cerna);text-decoration:none;height:44px;line-height:42px;padding:0 1rem;font-size:.78rem;letter-spacing:.14em;text-transform:uppercase}
+@media(max-width:44rem){.kont-m{display:inline-block}.hlavicka .wrap{gap:.6rem}.hlavicka .logo{margin-right:auto}.arch{grid-template-columns:1fr 1fr}.hodnoty{gap:1.4rem}
+.menu-btn{display:block}.hlavicka nav{display:none;position:absolute;inset:100% 0 auto;background:#0a0a0a;flex-direction:column;padding:1rem 1.25rem 1.5rem;gap:0;border-bottom:1px solid #2e2a22}
+.hlavicka.otevrene nav{display:flex}.hlavicka nav a{font-size:.95rem;padding:.9rem 0;min-height:44px;border-bottom:1px solid #1f1c17}
+.video.hlavni{aspect-ratio:16/9}.videa{grid-template-columns:1fr 1fr;gap:.6rem}.titulek{padding:1.2rem .5rem .4rem;font-size:.78rem}.hraj{transform:scale(.6)}
+.hero-text{padding-bottom:3rem}.sluzby-velke{grid-template-columns:1fr}.tym{grid-template-columns:1fr 1fr}.sluzba-velka img{aspect-ratio:16/10}}
+.titulky{grid-template-columns:repeat(auto-fit,minmax(20rem,1fr))}
+@media(min-width:60rem){.titulky{grid-template-columns:1fr 1fr}}
+.kontakt p a{display:inline-block;padding:12px 0;min-height:44px}.soc a{margin-right:1.2rem}
+.hero .tlacitko{background:var(--zlata);color:var(--cerna);min-height:52px;line-height:24px;font-weight:600}
+.hero .tlacitko:hover{background:var(--zl2)}

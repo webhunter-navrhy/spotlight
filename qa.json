@@ -1,0 +1,70 @@
+{
+  "url": "http://localhost:8766/spotlight/",
+  "ok": true,
+  "chyby": [],
+  "varovani": [
+    "Web má noindex (u ostrého webu pravděpodobně chyba)",
+    "Dotykové cíle <40 px na mobilu: 3× (např. a.skip \"Přeskočit na obsah\" 134×28; a \"info@spotlightweddin\" 163×20; a \"+420 724 193 231\" 116×20)"
+  ],
+  "metriky": {
+    "sirky": {
+      "1440": {
+        "scrollWidth": 1440,
+        "pocet_pretekajicich": 0
+      },
+      "1280": {
+        "scrollWidth": 1280,
+        "pocet_pretekajicich": 0
+      },
+      "1024": {
+        "scrollWidth": 1024,
+        "pocet_pretekajicich": 0
+      },
+      "820": {
+        "scrollWidth": 820,
+        "pocet_pretekajicich": 0
+      },
+      "390": {
+        "scrollWidth": 390,
+        "pocet_pretekajicich": 0
+      },
+      "360": {
+        "scrollWidth": 360,
+        "pocet_pretekajicich": 0
+      }
+    },
+    "preneseno_PC_MB": 1.01,
+    "nejvetsi_obrazek_PC": {
+      "kB": 126,
+      "url": "http://localhost:8766/spotlight/img/v-ypYKbQ-oB3Y-1280.webp"
+    },
+    "snimku_PC": 7,
+    "preneseno_mobil_MB": 1.2,
+    "nejvetsi_obrazek_mobil": {
+      "kB": 148,
+      "url": "http://localhost:8766/spotlight/img/LN_6313-1280.webp"
+    },
+    "snimku_mobil": 7,
+    "seo": {
+      "title": "Spotlight Weddings – svatební video a fotografie",
+      "description": "Svatební video a fotografie s důrazem na emoce a příběhy. Spotlight Weddings natáčí a fotí svatby, n",
+      "lang": "cs",
+      "h1": 1,
+      "jsonld": [
+        true
+      ],
+      "robots": "noindex, nofollow",
+      "og_image": "https://webhunter-navrhy.github.io/spotlight/og.jpg",
+      "bez_v": [],
+      "canonical": true,
+      "viewport": true
+    },
+    "maly_dotykovy_cil": 3,
+    "font_nadpis": "Bodoni Moda",
+    "font_text": "Jost",
+    "podstranky": {
+      "stranek": 1,
+      "obrazku": 66
+    }
+  }
+}
